@@ -12,3 +12,10 @@ This repository is currently in a **design and development** phase and should be
 # Spec
 
 Specification for what this software is, what it should do, what it should not do.
+
+## Notecards:
+
+Add:
+
+- Start-up scripts & functions
+- Task Schedulers
