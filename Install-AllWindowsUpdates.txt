@@ -9,6 +9,9 @@
 
 # To use the following Windows Configuration commands below, the Boxstarter module must be installed.
 # https://github.com/chocolatey/boxstarter
+Install-Module PSWindowsUpdate
+Import-Module PSWindowsUpdate
+Install-Module Boxstarter.WinConfig
 Import-Module Boxstarter.WinConfig
 # E.g. 
 #Get-Command -Module Boxstarter.WinConfig
