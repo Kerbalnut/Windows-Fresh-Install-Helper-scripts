@@ -106,10 +106,12 @@ choco install MarkdownMonster -y # Markdown Editor
 choco install tortoiseHg -y # TortoiseHg - GUI for Hg (Mercurial)
 #choco install kdiff3 -y # Included with Hg (Mercurial)
 #choco install git -y 
-#choco install tortoisegit -y # TortoiseGit is a Windows Shell Interface to Git and based on TortoiseSVN.
+choco install TortoiseGit -y # TortoiseGit is a Windows Shell Interface to Git and based on TortoiseSVN.
 #choco install poshgit -y # A set of PowerShell scripts which provide Git/PowerShell integration 
 choco install github-desktop -y # This essentially replaces https://chocolatey.org/packages/GitHub but is a different application. Your Desktop upgrade. 
-#choco install posh-github -y # PowerShell cmdlet helpers for working with the GitHub API. 
+#choco install Posh-GitHub -y # PowerShell cmdlet helpers for working with the GitHub API. 
+#choco install posh-ci-git -y
+#choco install Posh-GIT-HG -y
 #choco install sourcetree -y # A free Git client for Windows. Sourcetree simplifies how you interact with your Git repositories so you can focus on coding. Visualize and manage your repositories through Sourcetree's simple Git GUI.
 #choco install git-lfs -y # Git Large File Storage (LFS) replaces large files such as audio samples, videos, datasets, and graphics with text pointers inside Git, while storing the file contents on a remote server like GitHub.com or GitHub Enterprise.
 #choco install smartgit -y # Git client with support for GitHub Pull Requests+Comments, SVN and Mercurial.
