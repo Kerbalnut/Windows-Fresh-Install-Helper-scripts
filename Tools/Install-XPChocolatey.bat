@@ -1,5 +1,6 @@
 @ECHO OFF
 
+:RunAsAdministrator
 :: BatchGotAdmin International-Fix Code
 :: https://sites.google.com/site/eneerge/home/BatchGotAdmin
 :-------------------------------------------------------------------------------
@@ -8,7 +9,8 @@ REM  --> Check for permissions
 
 REM --> If error flag set, we do not have admin.
 IF '%ERRORLEVEL%' NEQ '0' (
-    ECHO Requesting administrative privileges...
+    ECHO Requesting administrative privileges... ^(waiting 2 seconds^)
+	PING -n 3 127.0.0.1>nul
     GOTO UACPrompt
 ) ELSE ( GOTO gotAdmin )
 
@@ -25,6 +27,7 @@ IF '%ERRORLEVEL%' NEQ '0' (
     CD /D "%~dp0"
 	ECHO BatchGotAdmin Permissions set.
 :-------------------------------------------------------------------------------
+:: End Run-As-Administrator function
 ECHO.
 ECHO -------------------------------------------------------------------------------
 SETLOCAL

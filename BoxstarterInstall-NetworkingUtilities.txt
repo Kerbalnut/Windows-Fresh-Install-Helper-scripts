@@ -7,6 +7,15 @@
 # Get-Command -Module Boxstarter.WinConfig
 # https://boxstarter.org/WinConfig
 
+# To use the following Windows Configuration commands below, the Boxstarter module must be installed.
+# https://github.com/chocolatey/boxstarter
+Import-Module Boxstarter.WinConfig
+# E.g. 
+#Get-Command -Module Boxstarter.WinConfig
+# Other modules:
+#Import-Module Boxstarter.Chocolatey
+#Import-Module Boxstarter.Bootstrapper
+
 # Boxstarter windows settings: show file extensions, show windows files, set hibernate options (power), 
 Set-WindowsExplorerOptions -EnableShowProtectedOSFiles -EnableShowFileExtensions -EnableShowFullPathInTitleBar -EnableShowRibbon
 Set-WindowsExplorerOptions -DisableOpenFileExplorerToQuickAccess -EnableShowRecentFilesInQuickAccess -EnableShowFrequentFoldersInQuickAccess
